@@ -1,6 +1,6 @@
-/********************************
+/*
 GENERAL
-*********************************/
+*/
 
 body{
   font-family:'Open Sans', sans-serif;
@@ -24,9 +24,9 @@ img {
 
 
 
-/********************************
+/*
 HEADING
-*********************************/
+*/
 
 header{
   
@@ -52,11 +52,15 @@ h3{
   margin:0 0 1em 0;
 }
 
+.icon{
+  margin: 0 20px 0 20px;
+}
 
 
-/********************************
+
+/*
 NAVIGATION
-*********************************/
+*/
 nav {
   text-align:center;
   padding: 10px 0;
@@ -81,9 +85,9 @@ nav a{
 
 
 
-/********************************
+/*
 FOOTER
-*********************************/
+*/
 footer{
   font-size:.85em;
   text-align:center;
@@ -100,9 +104,9 @@ footer{
 
 
 
-/********************************
+/*
 PAGE PORTFOLIO
-*********************************/
+*/
 
 #gallery{
   margin:0;
@@ -126,9 +130,9 @@ PAGE PORTFOLIO
   color:black;
 
 }
-/********************************
+/*
 ABOUT
-*********************************/
+*/
 .profile-photo {
   display:block;
   max-width:150px;
@@ -139,9 +143,9 @@ ABOUT
 
 
 
-/********************************
+/*
 COLORS
-*********************************/
+*/
 
 /*site body*/
 body{
@@ -149,15 +153,8 @@ body{
   color:#999;
 }
 
-/*green header*/
-header{
-  border-color:#3E918C;
-}
-
 /*nav background on mobile*/
-nav {
-  background:rgba(0, 0, 0, .75);
-}
+
 
 /*logo text*/
 h1{
@@ -171,7 +168,7 @@ a{
 
 /*nav link*/
 nav a, nav a:visited {
-  color:#fff;
+  color:black;
 }
 
 /*selected nav link color*/
