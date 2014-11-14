@@ -28,8 +28,9 @@
     clear:left;
   }
 
-  .icon{
-    margin: 20px; 
+  h1 span::after{
+    content: " ||";
+    margin:0 20px 0 20px;
   }
   
   /*
@@ -49,29 +50,21 @@
   }  
 
   nav {
+    font-size: 1.2em;
     
-    /*float:right;
-    font-size:1.125em;
-    margin-right:5%;
-    text-align:right;
-    width:45%;*/
   }
-  
-  #logo{
-    /*float:left;
-    margin-left:5%;
-    text-align:left;
-    width:45%;*/
+
+  h2 span::after{
+    content: " }";
+    margin:0 10px 0 10px;
   }
+
   
   h1{
-    font-size:2.5em;
+    font-size:3em;
   }
   
-  h2{
-    font-size:0.825em;
-    margin-bottom:20px;
-  }
+  
   header{
     border-bottom:5px solid white;
     margin-bottom:60px;
