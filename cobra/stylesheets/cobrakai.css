@@ -11,12 +11,11 @@ body{
   background-attachment: fixed;
   background-size: cover;
   background-image:url(../lib/images/denmarkfull.jpg);
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
   display: flex;
+  display: -webkit-flex;
   min-height: 100vh;
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 /*.img-responsive{
@@ -49,13 +48,12 @@ a{
 	font-family: 'Great Vibes', cursive;
 	width: 25%;
 	text-decoration: none;
-	flex: 1 0 auto;
-	align-self:stretch;
+	flex: 1;
+	-webkit-flex: 1;
+	
 }
 
 .site-footer{
-	align-self:stretch;
-	flex:0 1 auto;
 	text-align: center;
 	background-color:rgba(0, 0, 0, .90);
 	color: #505E7D;
