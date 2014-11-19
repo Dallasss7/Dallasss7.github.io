@@ -1,0 +1,78 @@
+.header-img{
+	margin:0 auto 50px auto;
+	width:100%;
+	border-radius:15px;
+	float:left;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.social-logo{
+	text-align: center;
+}
+
+body{
+	background-color: rgba(0, 0, 0, .75);
+	text-align: center;
+}
+
+.logo_wrapper{
+	text-decoration: none;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.logo_wrapper, div a:visited{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 2.5em;
+	font-family: 'Great Vibes', cursive;
+	width: 15%;
+	float: left;
+   color:white;
+   margin-right:20px;
+}
+
+div a:hover{
+	text-decoration:none;
+}
+
+#offerings_table{
+	display: inline-block;
+	color: white;
+	border: 5em white;
+	clear: both;
+	margin:4em 2em;
+}
+
+#offerings_table > caption {
+  text-align: center;
+  font-size: 250%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+  margin-bottom: 1.5em;
+}
+
+#offerings_table th,
+#offerings_table td {
+  text-align: left;
+  padding-right: 1em;
+}
+
+#offerings_table td {
+  padding:.5em .5em .5em 3em;
+  font-size: 1.35em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#offerings_table > thead {
+	font-size: 1.75em;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.site-footer{
+	clear:both;
+	text-align:center;
+	background-color:rgba(0, 0, 0, .90);
+	color: #505E7D;
+}

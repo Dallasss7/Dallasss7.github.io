@@ -1,0 +1,91 @@
+.header-img{
+	margin:0 auto 50px auto;
+	width:100%;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.social-logo{
+	text-align: center;
+
+}
+
+body{
+	background-color: rgba(0, 0, 0, .75);
+	text-align: center;
+}
+.body{
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.Julie{
+	border-radius: 25px;
+}
+.pershist{
+	margin: .5em 5em;
+}
+
+ul{
+	margin-bottom: 35px;
+	text-align: center;
+	list-style: none;
+}
+
+.logo_wrapper{
+	text-decoration: none;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.logo_wrapper, div a:visited{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 2.5em;
+	font-family: 'Great Vibes', cursive;
+	width: 15%;
+	float: left;
+   color:white;
+   margin-right:20px;
+}
+
+div a:hover{
+	text-decoration:none;
+	
+}
+
+.articles{
+	display: inline-block;
+	margin: 0 auto;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding:80px;
+	font-size: 1.3em;
+
+}
+
+.article_heading{
+	margin-top: 25px;
+}
+
+.massage-image{
+	margin: 15px  auto;
+	max-width: 500px;
+	max-height: 700px;
+	border-radius:20px;
+}
+
+.massage-image2 {
+	margin: 15px auto;
+	max-width:545px;
+	max-height:350px;
+	border-radius:20px;	
+}
+
+.site-footer{
+	text-align:center;
+	margin-top:-17px;
+	background-color:rgba(0, 0, 0, .90);
+	color: #505E7D;
+
+}
