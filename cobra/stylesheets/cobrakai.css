@@ -53,6 +53,8 @@ a{
 }
 
 .site-footer{
+	align-self:stretch;
+	flex:0 1 auto;
 	text-align: center;
 	background-color:rgba(0, 0, 0, .90);
 	color: #505E7D;
