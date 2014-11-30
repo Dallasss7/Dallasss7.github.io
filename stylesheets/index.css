@@ -136,7 +136,47 @@ ABOUT
   display:block;
   max-width:150px;
   margin:0 auto 30px;
-  border-radius:100%;
+}
+
+
+
+/*
+CONTACT
+*/
+
+.contact-info{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+
+.contact-info li.mail a{
+
+  background-image: url('../lib/imgs/mail4.png');
+}
+
+.contact-info li.twitter a{
+
+  background-image: url('../lib/imgs/twitterIcon.png');
+
+}
+
+.contact-info li.linkedIn a{
+
+  background-image: url('../lib/imgs/linkedin.png');
+
+}
+
+.contact-info a{
+
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
 }
 
 
@@ -153,14 +193,10 @@ body{
 }
 
 /*logo text*/
-h1{
+h1, a{
   color:black;
 }
 
-/*links*/
-a{
-  color:#6ab47b;
-}
 
 /*nav link*/
 nav a, nav a:visited {
