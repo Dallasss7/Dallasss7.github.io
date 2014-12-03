@@ -63,6 +63,13 @@ div a:hover{
 	border-radius:20px;	
 }
 
+
+.social-logo{
+  width:20px;
+  height:20px;
+  margin:0 5px;
+}
+
 .site-footer{
 	text-align:center;
 	margin-top:-17px;
