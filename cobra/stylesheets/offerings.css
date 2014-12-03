@@ -36,7 +36,7 @@ div a:hover{
 	text-decoration:none;
 }
 
-.offerings_table{
+.offerings_table, h1{
 	color: white;
 }
 
