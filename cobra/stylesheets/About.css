@@ -23,13 +23,8 @@ body{
 .Julie{
 	border-radius: 25px;
 }
-.pershist{
-	margin: .5em 5em;
-}
 
 ul{
-	margin-bottom: 35px;
-	text-align: center;
 	list-style: none;
 }
 
@@ -59,7 +54,7 @@ div a:hover{
 	margin: 0 auto;
 	color:white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	padding:80px;
+	padding:20px;
 	font-size: 1.3em;
 
 }
