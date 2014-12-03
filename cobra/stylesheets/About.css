@@ -26,6 +26,7 @@ body{
 
 ul{
 	list-style: none;
+	margin-left: -40px;
 }
 
 .logo_wrapper{
