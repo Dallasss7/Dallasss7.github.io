@@ -36,8 +36,14 @@ div a:hover{
 	text-decoration:none;
 }
 
-.offerings_table, h1{
+#offerings_table, h1{
 	color: white;
+}
+
+.social-logo{
+  width:20px;
+  height:20px;
+  margin:0 5px;
 }
 
 .site-footer{
@@ -46,3 +52,30 @@ div a:hover{
 	background-color:rgba(0, 0, 0, .90);
 	color: #505E7D;
 }
+
+
+@media screen and (min-width:660px){
+
+#offerings_table{
+
+	font-size: 1.5em;
+}
+
+#offerings_table td{
+
+	padding: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
