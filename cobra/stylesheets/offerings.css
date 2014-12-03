@@ -1,8 +1,6 @@
 .header-img{
 	margin:0 auto 50px auto;
 	width:100%;
-	border-radius:15px;
-	float:left;
 }
 
 .navbar{
@@ -38,36 +36,8 @@ div a:hover{
 	text-decoration:none;
 }
 
-#offerings_table{
-	display: inline-block;
+.offerings_table{
 	color: white;
-	border: 5em white;
-	clear: both;
-	margin:4em 2em;
-}
-
-#offerings_table > caption {
-  text-align: center;
-  font-size: 250%;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
-  margin-bottom: 1.5em;
-}
-
-#offerings_table th,
-#offerings_table td {
-  text-align: left;
-  padding-right: 1em;
-}
-
-#offerings_table td {
-  padding:.5em .5em .5em 3em;
-  font-size: 1.35em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-#offerings_table > thead {
-	font-size: 1.75em;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .site-footer{
