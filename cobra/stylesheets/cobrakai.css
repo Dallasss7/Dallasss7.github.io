@@ -54,7 +54,7 @@ a{
 	-webkit-flex: 1;
 }
 
-.site-footer{
+.site-footer, .site-footer a{
 	text-align: center;
 	margin-top:-17px;
 	background-color:rgba(0, 0, 0, .90);

@@ -46,7 +46,7 @@ div a:hover{
   margin:0 5px;
 }
 
-.site-footer{
+.site-footer, .site-footer a{
 	clear:both;
 	text-align:center;
 	background-color:rgba(0, 0, 0, .90);
