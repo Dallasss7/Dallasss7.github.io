@@ -19,7 +19,7 @@
   PAGE:PORTFOLIO
 */
   
-  #gallery li {
+  #gallery li, #memoryGame{
     width:28.3333%;
   }
   #gallery li:nth-child(4n){

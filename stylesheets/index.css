@@ -17,11 +17,15 @@ a{
   text-decoration:none;
 }
 
-img {
+img{
   max-width:100%;
   border-radius: .5em;
 }
 
+#memoryGame img{
+  width: 226px;
+  height: 145px;
+}
 
 
 /*
