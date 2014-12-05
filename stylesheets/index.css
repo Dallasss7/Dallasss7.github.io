@@ -173,6 +173,12 @@ CONTACT
 
 }
 
+.contact-info li.GitHub a{
+
+  background-image: url('../lib/imgs/github.png');
+
+}
+
 .contact-info a{
 
   display: block;
