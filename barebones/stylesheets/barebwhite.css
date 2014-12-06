@@ -29,6 +29,7 @@ h1, h1 a{
   font-style: italic;
   font-weight: 700;
   font-size:1.65em;
+
 }
 
 .bigbody{
@@ -105,6 +106,7 @@ a:hover, h2{
   font-family: 'Josefin Slab', serif;
   font-size:1.25em;
    word-spacing:5%;
+   text-decoration: none;
 }
 
 .headnav{
