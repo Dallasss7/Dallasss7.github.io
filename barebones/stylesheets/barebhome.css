@@ -1,7 +1,9 @@
+
 body, html {
-height:100%;
-padding:0;
-margin:0;
+  height:100%;
+  padding:0;
+  margin:0;
+  background-color: #2C3826;
 }
 
 body{
@@ -39,8 +41,8 @@ h1, h1 a{
   font-family: 'Aguafina Script', cursive;
   font-style: italic;
   font-weight: 700;
-  font-size: 3.75rem;
-  max-width: 45%;
+  font-size: 3em;
+  
   flex: 1;
   -webkit-flex: 1;
 }
