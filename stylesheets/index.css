@@ -17,14 +17,10 @@ a{
 }
 
 img{
-  max-width:100%;
+  max-width: 100%;
   border-radius: .5em;
 }
 
-#memoryGame img{
-  width: 226px;
-  height: 145px;
-}
 
 
 /*
@@ -32,7 +28,6 @@ HEADING
 */
 
 header{
-  
   margin:0 0 30px 0;
   padding:5px 0 0 0;
   width:100%;
@@ -70,9 +65,9 @@ nav {
 }
 
 nav ul{
-  list-style:none;
-  margin:0 10px;
-  padding:0;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
 }
 
 nav li{
@@ -91,17 +86,17 @@ nav a{
 FOOTER
 */
 footer{
-  font-size:.85em;
-  text-align:center;
-  clear:both;
-  padding-top:50px;
-  color:#ccc;
+  font-size: .85em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
 }
 
 .social-icon{
-  width:20px;
-  height:20px;
-  margin:0 5px;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
 
@@ -117,19 +112,18 @@ PAGE PORTFOLIO
 }
 
 #gallery li{
-  float:left;
-  width:45%;
-  margin:2.5%;
-  color:#bdc3c7;
-  border-radius: .5em; 
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  color: #bdc3c7;
 }
 
 #gallery li a p {
   font-family: "Geosanslight";
-  margin:0;
-  padding:5%;
-  font-size:1.45em;
-  color:black;
+  margin: 0;
+  padding: 5%;
+  font-size: 1.45em;
+  color: black;
 
 }
 /*
@@ -197,7 +191,7 @@ COLORS
 
 /*site body*/
 body{
-  /*background-color:#555;*/
+  background-color:#555;
   color:#999;
 }
 
