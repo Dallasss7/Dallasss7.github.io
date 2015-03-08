@@ -3455,6 +3455,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
+  text-align: center;
 }
 .nav > li > a {
   position: relative;
