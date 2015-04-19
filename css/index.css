@@ -63,6 +63,10 @@ nav
   text-shadow: 10px 10px 5px #ededed;
 }
 
+.nav a{
+  color: black;
+}
+
 ul li ul{
     display: none;
 }
@@ -217,6 +221,11 @@ about
 /*
 general
 */
+
+body{
+  margin: 0;
+  padding: 0;
+}
 
 #dallas-header h1{
   font-family:"Orbitron", sans-serif;
