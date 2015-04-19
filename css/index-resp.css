@@ -1,0 +1,47 @@
+@media screen and (min-width: 400px) {
+
+  h1{  
+    letter-spacing: .5em;
+  }
+
+  #dallas-header h1 span{
+    display: block;
+    letter-spacing: 0.25em;
+  }
+  
+  #portfolio h1, #about h1{
+    margin-bottom: 0;
+  }
+  
+    #gallery li{
+    width:28.3333%;
+  }
+
+  /*#gallery li:nth-child(4n){
+    clear:left;
+  }*/
+
+}
+
+@media screen and (min-width:850px){
+  
+
+  .profile-photo{
+    float:left;
+    margin:0 5% 80px 0;
+  }
+  
+  h1{
+  font-size: 2em;  
+    letter-spacing: 2em;
+  }
+
+  #gallery li{
+    margin:2.5%;
+  }
+
+}
+
+
+
+
