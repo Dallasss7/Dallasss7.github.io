@@ -18,9 +18,9 @@ function parallax(scrollY, heightFooter){
 
 
 $(window).load(function(){
-	var windowHeight = $(window).height() -60,
+	var windowHeight = $(window).height() +238.6,
 		footerHeight = $('footer').height(),
-		heightDocument =  $(window).height() + $('.content').height() + $('footer').height() -60;
+		heightDocument =  $(window).height() + $('.content').height() + $('footer').height() +238.6;
 
 	console.log(heightDocument);
 
