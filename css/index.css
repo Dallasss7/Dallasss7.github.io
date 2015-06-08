@@ -28,8 +28,8 @@ header{
 content
 */
 .content{
-  height: 104.23em;
-  min-height: 104.23em;
+  height: 94.23em;
+  min-height: 94.23em;
   background: #ededed;
   position: relative;
   z-index: 1;
@@ -200,7 +200,7 @@ about
   width: 100%;
 }
 
-#about div, .contact div{
+#about div{
   float: left;
   width: 80%;
   padding:10% 10% 0 10%;
