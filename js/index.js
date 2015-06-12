@@ -21,8 +21,9 @@ $(window).load(function(){
 	var windowHeight = $(window).height(),
 		footerHeight = $('footer').height(),
 		heightDocument =  $(window).height() + $('.content').height() + $('footer').height(),
-		totalDocument = heightDocument * .15;
-
+		paddingPercentage = heightDocument * .15,
+		totalDocument = heightDocument + paddingPercentage;
+		
 	console.log("heightDocument ", heightDocument);
 	console.log("content height ", $('.content').height());
 	console.log("totalDocument", totalDocument);
