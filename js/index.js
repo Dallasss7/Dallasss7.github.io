@@ -47,6 +47,9 @@ $(window).load(function(){
 
 });
 
+parallax(window.scrollY, footerHeight)
+
+
 function jFade(event){
 
 $('#dallas-header').fadeOut();

@@ -137,7 +137,7 @@ parallax wrapper
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-header, #main{
+header, footer, #main{
 	-webkit-transition-property: all;
      -moz-transition-property: all;
       transition-property: all;
