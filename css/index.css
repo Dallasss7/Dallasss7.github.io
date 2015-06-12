@@ -29,8 +29,8 @@ header{
 content
 */
 .content{
-  height: 45em;
-  min-height: 45em;
+  height: 145em;
+  min-height: 145em;
   background: #ededed;
   position: relative;
   z-index: 1;
