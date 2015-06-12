@@ -12,6 +12,7 @@ animate main
 #main{
   height: 100%;
 	width: 100%;
+  left: 0;
 	position: fixed;
 }
 
@@ -137,7 +138,7 @@ parallax wrapper
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-header, footer, #main{
+header, #dallas-header, footer, #main{
 	-webkit-transition-property: all;
      -moz-transition-property: all;
       transition-property: all;
@@ -286,6 +287,22 @@ img{
 a{
   text-decoration:none;
 }
+
+#heightPage, #heightScroll{
+  width:10px;
+  top:0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage{
+  left: 0;
+}
+
+#heightScroll{
+  right: 0;
+}
+
 
 /*
 scenes
