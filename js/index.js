@@ -4,6 +4,9 @@ var winWidth = $(window).width();
 
 
 function parallax(scrollY, heightFooter){
+
+	console.log(scrollY);
+	console.log(heightFooter);
 	
 	if(scrollY >= heightFooter){
 		$('footer').css({'bottom': '0px'});
@@ -20,8 +23,7 @@ function parallax(scrollY, heightFooter){
 $(window).load(function(){
 	var windowHeight = $(window).height(),
 		footerHeight = $('footer').height(),
-		// paddingHeight =  ($(window).height() + $('.content').height()) * .15,
-		heightDocument = $(window).height() + $('.content').height();
+		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height() - 20;
 
 	console.log("heightDocument ", heightDocument);
 	console.log("content height ", $('.content').height())
@@ -43,6 +45,9 @@ $(window).load(function(){
 		$('header').css({ 'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'})
 	
 		parallax(scroll, footerHeight);
+	
+		parallax(scroll, footerHeight);
+
 	}
 
 });
