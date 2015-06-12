@@ -88,12 +88,7 @@ contact
 
 .contact-info{
   text-align: center;
-  width: 100%;
-  padding:0;
-}
-
-#con{
-  padding:0;
+  text-decoration: none;
 }
 
 .contact-info li a{  
@@ -101,8 +96,6 @@ contact
   background: rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  padding: 10px 35px;
-  margin: 0 0 10px;
 }
 
 .contact-info li.mail a{
