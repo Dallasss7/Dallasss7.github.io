@@ -25,7 +25,7 @@ $(window).load(function(){
 
 	console.log("heightDocument ", heightDocument);
 	console.log("content height ", $('.content').height());
-	console.console.log("totalDocument", totalDocument);
+	console.log("totalDocument", totalDocument);
 
 	$('#main, #wrapper').css({ 'height': totalDocument + 'px'});
 
