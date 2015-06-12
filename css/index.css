@@ -30,8 +30,8 @@ header{
 content
 */
 .content{
-  height: 145em;
-  min-height: 145em;
+  height: 125em;
+  min-height: 125em;
   background: #ededed;
   position: relative;
   z-index: 1;
