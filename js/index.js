@@ -20,12 +20,13 @@ function parallax(scrollY, heightFooter){
 $(window).load(function(){
 	var windowHeight = $(window).height(),
 		footerHeight = $('footer').height(),
-		heightDocument =  $(window).height() + $('.content').height() + $('footer').height() + .15;
+		heightDocument =  $(window).height() + $('.content').height() + $('footer').height(),
+		totalDocument = heightDocument * .15;
 
 	console.log("heightDocument ", heightDocument);
 	console.log("content height ", $('.content').height())
 
-	$('#main, #wrapper').css({ 'height': heightDocument + 'px'});
+	$('#main, #wrapper').css({ 'height': totalDocument + 'px'});
 
 	$('header').css({ 'height': windowHeight + 'px', 'line-height' : windowHeight + 'px'});
 
@@ -39,7 +40,7 @@ $(window).load(function(){
 
 		$('#main').css({ 'top': '-' + scroll +'px'});
 
-		$('header').css({ 'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'})
+		$('header').css({ 'background-position-y' : 50 - (scroll * 100 / totalDocument) + '%'})
 	
 		parallax(scroll, footerHeight);
 	}
