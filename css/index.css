@@ -88,8 +88,14 @@ contact
 
 .contact-info{
   text-align: center;
-  text-decoration: none;
+  list-style-type: none;  
+  padding: 5px;
 }
+
+.contact-info li{
+  display: inline;
+}
+
 
 .contact-info li a{  
   text-decoration: none;
