@@ -14,7 +14,7 @@ function parallax(scrollY, heightFooter){
 
 
 $(window).load(function(){
-	var windowHeight = $(window).height() - 55,
+	var windowHeight = $(window).height(),
 		footerHeight = $('footer').height(),
 		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height() - 20;
 
@@ -53,6 +53,11 @@ function jFade(event){
 $('#arrow').animate({opacity :0}, 500);
 }
 
+function jFadeHead(event){
+
+$('#dal-head').animate({opacity :0}, 500);
+}
+
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({   
@@ -68,6 +73,20 @@ scene.on("start", function (event) {
 scene.on("start", jFade);
 
 scene.addTo(controller); 
+
+
+var headScene = new ScrollMagic.Scene({   
+	triggerElement: "#gallery",
+	reverse:true
+    })
+headScene.update();
+headScene.on("start", function (event) {
+    console.log("Hit start point of headScene.");
+});
+headScene.on("start", jFadeHead);
+
+headScene.addTo(controller); 
+
 
 console.log(winWidth, "WINDOW WIDTH")
 
