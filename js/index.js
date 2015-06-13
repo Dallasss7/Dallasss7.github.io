@@ -53,16 +53,26 @@ function jFade(event){
 $('#arrow').animate({opacity :0}, 500);
 }
 
+function jFadeIn(event){
+
+$('#arrow').animate({opacity :100}, 500);
+}
+
 function jFadeHead(event){
 
 $('#dal-head').animate({opacity :0}, 500);
 }
 
+function jFadeinHead(event){
+
+$('#dal-head').animate({opacity :100}, 500);
+}
+
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({   
-	duration: 700,
-	// triggerHook:"onCenter",
+	duration:200,
+	triggerElement:"trigger",
 	reverse:true
     })
 
@@ -71,7 +81,7 @@ scene.on("start", function (event) {
     console.log("Hit start point of scene.");
 });
 scene.on("start", jFade);
-
+scene.on("leave", jFadeIn);
 scene.addTo(controller); 
 
 
@@ -84,7 +94,7 @@ headScene.on("start", function (event) {
     console.log("Hit start point of headScene.");
 });
 headScene.on("start", jFadeHead);
-
+headScene.on("leave", jFadeinHead);
 headScene.addTo(controller); 
 
 
