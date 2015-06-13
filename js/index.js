@@ -55,31 +55,31 @@ $(window).load(function(){
 
 
 
-function jFade(event){
+// function jFade(event){
 
-$('#dallas-header').fadeOut();
-}
+// $('#dallas-header').fadeOut();
+// }
 
-function jFadeIn(event){
+// function jFadeIn(event){
 
-$('#dallas-header').fadeIn();
-}
+// $('#dallas-header').fadeIn();
+// }
 
-var controller = new ScrollMagic.Controller();
+// var controller = new ScrollMagic.Controller();
 
 
-var scene = new ScrollMagic.Scene({
-	duration: 700,    
-	triggerElement: "#gallery",
-	reverse:true
-    })
+// var scene = new ScrollMagic.Scene({
+// 	duration: 700,    
+// 	triggerElement: "#gallery",
+// 	reverse:true
+//     })
 
-scene.update();
-scene.on("enter", jFade);
-scene.on("leave", jFadeIn);
-scene.addTo(controller); 
+// scene.update();
+// scene.on("enter", jFade);
+// scene.on("leave", jFadeIn);
+// scene.addTo(controller); 
 
-console.log(winWidth, "WINDOW WIDTH")
+// console.log(winWidth, "WINDOW WIDTH")
 
 
 
