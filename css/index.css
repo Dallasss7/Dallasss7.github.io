@@ -38,51 +38,6 @@ content
 }
 
 /*
-nav
-*/
-.nav{
-  width: 100%;
-  padding: 0;
-  font-family:"ElroNet Monospace", sans-serif;
-  text-align: center;
-  text-shadow: 10px 10px 10px #888888;
-}
-
-.nav ul{
-  text-align: center;
-  line-height: 21px;
-  padding: 8px 0px;
-  margin: 0px;
-}
-
-.nav li{
-  display: inline-block;
-  padding: 0;
-}
-
-.nav a:hover{
-  text-decoration: underline;
-  text-shadow: 10px 10px 5px #ededed;
-}
-
-.nav a{
-  color: black;
-}
-
-ul li ul{
-    display: none;
-}
-
-.sticky-nav{
-  width: 100%;
-  background:rgba(237, 237, 237, .65);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left:0;
-}
-
-/*
 contact
 */
 
