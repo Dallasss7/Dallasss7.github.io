@@ -166,7 +166,7 @@ about
 }
 
 #about p{
-  font-family:"Raleway", sans-serif;
+  font-family:"Raleway", "Trench", sans-serif;
   font-weight: lighter;
   text-transform: lowercase;
 }
@@ -204,7 +204,7 @@ body{
 }
 
 #dallas-header h1{
-  font-family:"Orbitron", sans-serif;
+  font-family:"Orbitron", "Trench", sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
   color: #999;
@@ -215,13 +215,13 @@ body{
   text-transform: lowercase;
   text-align: center;
   font-size: .5em;
-  font-family:"Walkway Expand", sans-serif;
+  font-family:"Walkway Expand", "Steiner", sans-serif;
   letter-spacing: 1.25em;
 }
 
  h1{
   letter-spacing: 2em;
-  font-family:"Walkway Expand", sans-serif;
+  font-family:"Walkway Expand", "Champagne & Limousines", sans-serif;
   text-transform: uppercase;
   text-align: center;
   line-height: 50px;
