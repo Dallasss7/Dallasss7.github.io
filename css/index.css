@@ -260,6 +260,11 @@ a{
   right: 0;
 }
 
+#arrow{
+  display: block;
+  box-shadow: none;
+  margin: 0 auto;
+}
 
 /*
 scenes

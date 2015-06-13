@@ -1,12 +1,6 @@
 var winWidth = $(window).width();
 
-
-
-
 function parallax(scrollY, heightFooter){
-
-	console.log(scrollY);
-	console.log(heightFooter);
 	
 	if(scrollY >= heightFooter){
 		$('footer').css({'bottom': '0px'});
@@ -19,9 +13,8 @@ function parallax(scrollY, heightFooter){
 }
 
 
-
 $(window).load(function(){
-	var windowHeight = $(window).height(),
+	var windowHeight = $(window).height() - 55,
 		footerHeight = $('footer').height(),
 		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height() - 20;
 
@@ -55,31 +48,28 @@ $(window).load(function(){
 
 
 
-// function jFade(event){
+function jFade(event){
 
-// $('#dallas-header').fadeOut();
-// }
+$('#arrow').animate({opacity :0}, 500);
+}
 
-// function jFadeIn(event){
+var controller = new ScrollMagic.Controller();
 
-// $('#dallas-header').fadeIn();
-// }
+var scene = new ScrollMagic.Scene({   
+	duration: 700,
+	// triggerHook:"onCenter",
+	reverse:true
+    })
 
-// var controller = new ScrollMagic.Controller();
+scene.update();
+scene.on("start", function (event) {
+    console.log("Hit start point of scene.");
+});
+scene.on("start", jFade);
 
+scene.addTo(controller); 
 
-// var scene = new ScrollMagic.Scene({
-// 	duration: 700,    
-// 	triggerElement: "#gallery",
-// 	reverse:true
-//     })
-
-// scene.update();
-// scene.on("enter", jFade);
-// scene.on("leave", jFadeIn);
-// scene.addTo(controller); 
-
-// console.log(winWidth, "WINDOW WIDTH")
+console.log(winWidth, "WINDOW WIDTH")
 
 
 
