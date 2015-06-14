@@ -20,23 +20,25 @@ $(window).load(function(){
 
 
 
-	if(winWidth > 1900){
-		$('.content').css({
-			'height': '1970px',
-			'min-height':'1970px'
-		});		
-		$('.wrapper').css({
-			'height':'3039px'
-		})
-	}
+	// if(winWidth > 1900){
+	// 	$('.content').css({
+	// 		'height': '1890px',
+	// 		'min-height':'1890px'
+	// 	});		
+	// 	$('#wrapper').css({
+	// 		'height':'3039px'
+	// 	});
+		
+	// 	console.log('wrapper ' + $('#wrapper').height())
+	// }
 
-	if(winWidth < 1600){
-		console.log("IT WORKED")
-	}
+	// if(winWidth < 1600){
+	// 	console.log("IT WORKED")
+	// }
 
 
-	console.log("heightDocument ", heightDocument);
-	console.log("content height ", $('.content').height())
+	// console.log("heightDocument ", heightDocument);
+	// console.log("content height ", $('.content').height())
 
 	$('#main, #wrapper').css({ 'height': heightDocument + 'px'});
 
