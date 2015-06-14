@@ -22,7 +22,8 @@ $(window).load(function(){
 
 	if(winWidth > 1900){
 		$('.content').css({
-			'height': '1770px'
+			'height': '1970px',
+			'min-height':'1970px'
 		});		
 	}
 
