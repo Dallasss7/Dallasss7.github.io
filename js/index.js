@@ -25,6 +25,9 @@ $(window).load(function(){
 			'height': '1970px',
 			'min-height':'1970px'
 		});		
+		$('.wrapper').css({
+			'height':'3039px'
+		})
 	}
 
 	if(winWidth < 1600){
