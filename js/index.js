@@ -18,6 +18,19 @@ $(window).load(function(){
 		footerHeight = $('footer').height(),
 		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height() - 20;
 
+
+
+	if(winWidth > 1900){
+		$('.content').css({
+			'height': '1770px'
+		});		
+	}
+
+	if(winWidth < 1600){
+		console.log("IT WORKED")
+	}
+
+
 	console.log("heightDocument ", heightDocument);
 	console.log("content height ", $('.content').height())
 
