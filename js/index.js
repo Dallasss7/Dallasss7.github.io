@@ -96,9 +96,9 @@ var scene = new ScrollMagic.Scene({
     })
 
 scene.update();
-scene.on("start", function (event) {
-    console.log("Hit start point of scene.");
-});
+// scene.on("start", function (event) {
+//     console.log("Hit start point of scene.");
+// });
 scene.on("start", jFade);
 scene.on("leave", jFadeIn);
 scene.addTo(controller); 
@@ -109,9 +109,9 @@ var headScene = new ScrollMagic.Scene({
 	reverse:true
     })
 headScene.update();
-headScene.on("start", function (event) {
-    console.log("Hit start point of headScene.");
-});
+// headScene.on("start", function (event) {
+//     console.log("Hit start point of headScene.");
+// });
 headScene.on("start", jFadeHead);
 headScene.on("leave", jFadeinHead);
 headScene.addTo(controller); 
