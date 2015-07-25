@@ -11,13 +11,55 @@ function parallax(scrollY, heightFooter){
 	}
 
 }
+function mobile(){
+	$('.parallax').css({
+
+		'position': 'static',
+		'margin' : '0'
+	});
+
+	$('#heightPage').css({
+		'position': 'static',
+		'z-index':'auto'
+	});
+
+	$('#heightScroll').css({
+		'position': 'static',
+		'z-index':'auto'
+	});
+
+
+	$('header').css({
+		'position': 'static',
+		'z-index':'auto'
+	});
+
+	$('#wrapper').css({
+		'overflow': 'visible'
+	});
+
+	$('#arrow img').css({
+		'display':'none'
+	});
+
+
+
+	$('#main').css({
+		'position': 'static'
+	});
+}
+
+
 
 
 $(window).load(function(){
+	if(winWidth<768){
+		return mobile();
+	}
+	else
 	var windowHeight = $(window).height(),
 		footerHeight = $('footer').height(),
 		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height() - 20;
-
 
 
 	// if(winWidth > 1900){
