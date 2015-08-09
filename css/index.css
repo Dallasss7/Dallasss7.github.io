@@ -185,7 +185,7 @@ footer{
   background: gray;
   bottom:-45em;
   position: fixed;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 
