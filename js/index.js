@@ -11,11 +11,31 @@ function parallax(scrollY, heightFooter){
 	}
 
 }
-function mobile(){
-	$('.parallax').css({
 
+
+$(window).load(function(){
+
+	var windowHeight = $(window).height(),
+		footerHeight = $('footer').height(),
+		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height();
+
+
+
+	$('#main, #wrapper').css({ 'height': heightDocument + 'px'});
+
+	$('header').css({ 'height': windowHeight + 'px', 'line-height' : windowHeight + 'px'});
+
+	$('.parallax').css({ 'margin-top': windowHeight + 'px'});
+
+	parallax(window.scrollY, footerHeight);
+
+	if(winWidth<768){
+		console.log('IT WORKED', winWidth)
+
+		$('.parallax').css({
 		'position': 'static',
-		'margin' : '0'
+		'margin-top' : '0px',
+		'margin-bottom': '75px'
 	});
 
 	$('#heightPage').css({
@@ -28,67 +48,45 @@ function mobile(){
 		'z-index':'auto'
 	});
 
-
 	$('header').css({
 		'position': 'static',
-		'z-index':'auto'
+		'z-index':'auto',
+		'height': '277px'
 	});
 
 	$('#wrapper').css({
-		'overflow': 'visible'
+		'overflow': 'visible',
+		'height':'1274px'
 	});
 
 	$('#arrow img').css({
 		'display':'none'
 	});
 
-
-
 	$('#main').css({
-		'position': 'static'
+		'position': 'static',
+		'height':'1274px'
 	});
-}
 
-
-
-
-$(window).load(function(){
-	if(winWidth<768){
-		return mobile();
+	$('.content').css({
+		'height':'73em',
+		'min-height':'73em'
+	});
+	
 	}
-	else
-	var windowHeight = $(window).height(),
-		footerHeight = $('footer').height(),
-		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height() - 20;
 
+	else if(winWidth>1850){
+			console.log('IT WORKED', winWidth)
+	$('#wrapper').css({
+		'height':'2795px'
+	});
 
-	// if(winWidth > 1900){
-	// 	$('.content').css({
-	// 		'height': '1890px',
-	// 		'min-height':'1890px'
-	// 	});		
-	// 	$('#wrapper').css({
-	// 		'height':'3039px'
-	// 	});
-		
-	// 	console.log('wrapper ' + $('#wrapper').height())
-	// }
+	$('.content').css({
+		'height': '115em'
+	})
 
-	// if(winWidth < 1600){
-	// 	console.log("IT WORKED")
-	// }
+	}
 
-
-	// console.log("heightDocument ", heightDocument);
-	// console.log("content height ", $('.content').height())
-
-	$('#main, #wrapper').css({ 'height': heightDocument + 'px'});
-
-	$('header').css({ 'height': windowHeight + 'px', 'line-height' : windowHeight + 'px'});
-
-	$('.parallax').css({ 'margin-top': windowHeight + 'px'});
-
-	parallax(window.scrollY, footerHeight);
 
 	window.onscroll = function(){
 		
