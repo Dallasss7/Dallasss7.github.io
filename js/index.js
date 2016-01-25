@@ -27,7 +27,10 @@ $(window).load(function(){
 
 	$('.parallax').css({ 'margin-top': windowHeight + 'px'});
 
-	parallax(window.scrollY, footerHeight);
+	//This if statement will fix the weird scrolling issue on mobile.
+	if(winWidth>768){
+		parallax(window.scrollY, footerHeight);
+	}
 
 	if(winWidth<768){
 		console.log('IT WORKED', winWidth)
@@ -84,7 +87,9 @@ $(window).load(function(){
 	$('.content').css({
 		'height': '115em'
 	})
-
+	$('header').css({
+		'background-color':'#B2B5BA'
+	})
 	}
 
 
@@ -105,26 +110,27 @@ $(window).load(function(){
 });
 
 
+//This will fix the annoying animations that occur on mobile. They look great on desktop but not mobile.
+if(winWidth>768){
+	function jFade(event){
 
+	$('#arrow').animate({opacity :0}, 500);
+	}
 
-function jFade(event){
+	function jFadeIn(event){
 
-$('#arrow').animate({opacity :0}, 500);
-}
+	$('#arrow').animate({opacity :100}, 500);
+	}
 
-function jFadeIn(event){
+	function jFadeHead(event){
 
-$('#arrow').animate({opacity :100}, 500);
-}
+	$('#dal-head').animate({opacity :0}, 500);
+	}
 
-function jFadeHead(event){
+	function jFadeinHead(event){
 
-$('#dal-head').animate({opacity :0}, 500);
-}
-
-function jFadeinHead(event){
-
-$('#dal-head').animate({opacity :100}, 500);
+	$('#dal-head').animate({opacity :100}, 500);
+	}
 }
 
 var controller = new ScrollMagic.Controller();
