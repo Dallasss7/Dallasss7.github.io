@@ -1,5 +1,11 @@
 @media screen and (min-width: 320px) {
 
+    #gallery li{
+    width:28.3333%;
+    margin: 2%;
+  }
+
+
   h1{  
     letter-spacing: .5em;
   }
@@ -13,18 +19,13 @@
     margin-bottom: 0;
   }
   
-    #gallery li{
-    width:28.3333%;
-    margin: 2%;
-  }
-
   #gallery li a p{
     font-size: 1em;
   }
 
-  /*#gallery li:nth-child(4n){
+  #gallery li:nth-child(4n){
     clear:left;
-  }*/
+  }
 
 }
 
