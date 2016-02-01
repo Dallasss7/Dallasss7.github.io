@@ -66,10 +66,10 @@ sticky footer
 
 
 .contact-info{
-  margin: 50px 0 16px 0;
+  
   text-align: center;
   list-style-type: none;  
-  padding: 5px;
+
 }
 
 .contact-info li{
@@ -80,9 +80,9 @@ sticky footer
 .contact-info li a{  
   background: rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 10px 35px;
-  margin: 0 0 10px;
+  background-size: 1.5em 1.5em;
+  padding: 1em 3em;
+  margin: 0 0 1em;
 }
 
 
@@ -108,7 +108,7 @@ sticky footer
   font-family:"Walkway Expand", "Champagne & Limousines", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  line-height: 50px;
+  line-height: 5em;
   color: #666;
 }
 
