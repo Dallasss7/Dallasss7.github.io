@@ -1,65 +1,25 @@
-/*
-body wrapper
-*/
-#wrapper{
-  height: 100%;
-	overflow: hidden;
-}
-
-/*
-animate main
-*/
-#main{
-  height: 100%;
-	width: 100%;
-  left: 0;
-	position: fixed;
-}
-
-header{
-  background-color: #172D45;
-	width: 100%;
-	height: 100%;
-	background: url("../lib/dock.jpg") no-repeat 50% 50%;
-	top: 0;
-	position: fixed;
-	z-index: -1;
-}
-
-/*
-content
-*/
-.content{
-  height: 95em;
-  min-height: 95em;
-  background: #ededed;
-  position: relative;
-  z-index: 1;
-}
-
-/*
-contact
-*/
-
-.contact-info{
-  margin: 50px 0 16px 0;
-  text-align: center;
-  list-style-type: none;  
-  padding: 5px;
-}
-
-.contact-info li{
-  display: inline;
-}
-
-
-.contact-info li a{  
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0);
+/*TO achieve full responsive backgroun*/
+body {
+  /* Location of the image */
+  background-image: url(../lib/dock2.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
   background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 10px 35px;
-  margin: 0 0 10px;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
 }
 
 .contact-info li.mail a{
@@ -86,130 +46,70 @@ contact
 }
 
 
-/*
-parallax wrapper
-*/
-.parallax{
-	margin-top: 100%;
-	margin-bottom: 300px;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-header, #dallas-header, footer, #main{
-	-webkit-transition-property: all;
-     -moz-transition-property: all;
-      transition-property: all;
-
-  -webkit-transition-duration: 0.4s;
-     -moz-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-      transition-timing-function: cubic-bezier(0, 0, 0, 1);
-}
-
-/*
-page portfolio
-*/
-
-#portfolio{
-  padding: 7% 0 .25em 0;
-}
-
-#portfolio h1, #about h1, .contact h1{
-  margin-bottom: -2em;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.15);
-  border-top: 5px solid rgba(0, 0, 0, 0.15);
-}
-
-#gallery{
-  margin:0;
-  padding:0;
-  list-style:none; 
-
-}
-
-#gallery li{
-  float: left;
-  width: 35%;
-  margin: 7%;
-  color: #bdc3c7;
-
-}
-
-#gallery li a p {
-  font-family: "Raleway";
-  margin: 0;
-  padding: 5%;
-  font-size: 1.45em;
-  font-weight: lighter;
+a{
   color: black;
+  text-decoration: none;
+}
+
+.site-text{
   text-align: center;
-  
-}
-
-/*
-about
-*/
-
-#about, #portfolio{
-  float: left;
-  width: 100%;
-}
-
-#about div{
-  float: left;
-  width: 80%;
-  padding:10% 10% 0 10%;
-}
-
-#about p{
-  font-family:"Raleway", "Trench", sans-serif;
-  font-weight: lighter;
-  text-transform: lowercase;
-}
-
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-}
-
-/*
-footer
-*/
-footer{
-  width: 100%;
-  height: 5.5em;
-  background: gray;
-  bottom:-45em;
-  position: fixed;
-  /*z-index: -1;*/
+  font-family:"Orbitron", "Trench", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: black;
 }
 
 
 /*
-general
+sticky footer
 */
-
-html{
-  background-color: #B2B5BA;
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+height: 4em;
 }
 
-body{
-  margin: 0;
-  padding: 0;
+
+.contact-info{
+  margin: 50px 0 16px 0;
+  text-align: center;
+  list-style-type: none;  
+  padding: 5px;
 }
 
-#dallas-header h1{
+.contact-info li{
+  display: inline;
+}
+
+
+.contact-info li a{  
+  background: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 10px 35px;
+  margin: 0 0 10px;
+}
+
+
+
+.header h1{
   font-family:"Orbitron", "Trench", sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
   color: #999;
 }
 
-#dallas-header span{
+.header span{
   color: #666;
   text-transform: lowercase;
   text-align: center;
@@ -226,64 +126,5 @@ body{
   line-height: 50px;
   color: #666;
 }
-
-h2{
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 1.25em;
-}
-
-
-img{
-  max-width: 100%;
-  border-radius: .5em;
-  box-shadow: 10px 10px 5px #888888;
-}
-
-a{
-  text-decoration:none;
-}
-
-#heightPage, #heightScroll{
-  width:10px;
-  top:0;
-  position: absolute;
-  z-index: 99;
-}
-
-#heightPage{
-  left: 0;
-}
-
-#heightScroll{
-  right: 0;
-}
-
-#arrow{
-  /*border: red 2px dashed;*/
-  width: 5%;
-  margin: 0 auto;
-  padding-top: 15%;
-}
-
-#arrow img{
-  width: 100;
-  box-shadow: none;
-  bottom: 0;
-}
-
-/*
-scenes
-*/
-#trigger{
- 
-}
-
-
-
-
-
-
-
 
 
