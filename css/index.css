@@ -5,6 +5,10 @@ a{
   text-decoration: none;
 }
 
+body{
+  background: url(../lib/dock2.jpg) no-repeat 50% 50%;
+}
+
 /*Header*/
 .header h1{
   font-family:"Orbitron", "Trench", sans-serif;
