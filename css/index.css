@@ -1,63 +1,33 @@
-/*TO achieve full responsive backgroun*/
-body {
-  /* Location of the image */
-  background-image: url(../lib/dock2.jpg);
-  
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #464646;
-}
 
-.contact-info li.mail a{
-
-  background-image: url('../lib/mail.png');
-}
-
-.contact-info li.twitter a{
-
-  background-image: url('../lib/twitter.png');
-
-}
-
-.contact-info li.linkedIn a{
-
-  background-image: url('../lib/linkedin.png');
-
-}
-
-.contact-info li.GitHub a{
-
-  background-image: url('../lib/github.png');
-
-}
-
-
+/*General*/
 a{
   color: black;
   text-decoration: none;
 }
 
+/*Header*/
+.header h1{
+  font-family:"Orbitron", "Trench", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.header p{
+  color: #666;
+  text-transform: lowercase;
+  text-align: center;
+  font-family:"Walkway Expand", "Steiner", sans-serif;
+}
+
+/*Content*/
 .site-text{
   text-align: center;
   font-family:"Orbitron", "Trench", sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
   color: black;
-  font-size: 3em;
 }
 
 
@@ -67,18 +37,22 @@ sticky footer
 * {
 margin: 0;
 }
+
 html, body {
 height: 100%;
 }
+
 .wrapper {
 min-height: 100%;
 height: auto !important;
 height: 100%;
 margin: 0 auto -4em;
 }
+
 .footer, .push {
 height: 4em;
 }
+
 .contact-info{
   margin: 50px 0 16px 0;
   text-align: center;
@@ -90,7 +64,6 @@ height: 4em;
   display: inline;
 }
 
-
 .contact-info li a{  
   text-decoration: none;
   background: rgba(0, 0, 0, 0);
@@ -98,26 +71,20 @@ height: 4em;
   background-size: 20px 20px;
   padding: 25px 12px;
   margin: 0 0 10px;
-  font-size: 2.5em;
 }
 
-
-.header h1{
-  font-family:"Orbitron", "Trench", sans-serif;
-  font-weight: bolder;
-  text-align: center;
-  text-transform: uppercase;
-  color: #999;
-  font-size: 5em;
+.contact-info li.mail a{
+  background-image: url('../lib/mail.png');
 }
 
-.header p{
-  color: #666;
-  text-transform: lowercase;
-  text-align: center;
-  font-size: 4em;
-  font-family:"Walkway Expand", "Steiner", sans-serif;
-  letter-spacing: 1.25em;
+.contact-info li.twitter a{
+  background-image: url('../lib/twitter.png');
 }
 
+.contact-info li.linkedIn a{
+  background-image: url('../lib/linkedin.png');
+}
 
+.contact-info li.GitHub a{
+  background-image: url('../lib/github.png');
+}
