@@ -1,195 +1,148 @@
-var winWidth = $(window).width();
-
-function parallax(scrollY, heightFooter){
-	
-	if(scrollY >= heightFooter){
-		$('footer').css({'bottom': '0px'});
-	}
-
-	else{
-		$('footer').css({'bottom': '-' + heightFooter + 'px'});
-	}
-
-}
+//ASSIGNMENT: 
+// Look up in the underscore js documentation how to change the
+// template settings to use "Mustache.js" style template interpolation 
+//ANSWER: 
 
 
-$(window).load(function(){
+//ASSIGNMENT: 
+// Change the template in the variable compiledTemplate in TodoListView 
+// to match the new template delimeters 
+// ASSIGNMENT: 
+// In a group, compare the string concatenation in example 5 with the use of 
+// templates here
 
-	var windowHeight = $(window).height(),
-		footerHeight = $('footer').height(),
-		heightDocument =   (windowHeight) + $('.content').height() + $('footer').height();
+var app = {};
 
+app.contentModel = Backbone.Model.extend({});
 
-
-	$('#main, #wrapper').css({ 'height': heightDocument + 'px'});
-
-	$('header').css({ 'height': windowHeight + 'px', 'line-height' : windowHeight + 'px'});
-
-	$('.parallax').css({ 'margin-top': windowHeight + 'px'});
-
-	//This if statement will fix the weird scrolling issue on mobile.
-	if(winWidth>768){
-		parallax(window.scrollY, footerHeight);
-	}
-
-	if(winWidth<768){
-		console.log('IT WORKED', winWidth)
-
-		$('.parallax').css({
-		'position': 'static',
-		'margin-top' : '0px',
-		'margin-bottom': '75px'
-	});
-
-	$('#heightPage').css({
-		'position': 'static',
-		'z-index':'auto'
-	});
-
-	$('#heightScroll').css({
-		'position': 'static',
-		'z-index':'auto'
-	});
-
-	$('header').css({
-		'position': 'static',
-		'z-index':'auto',
-		'height': '277px'
-	});
-
-	$('#wrapper').css({
-		'overflow': 'visible',
-		'height':'1274px'
-	});
-
-	$('#arrow img').css({
-		'display':'none'
-	});
-
-	$('#main').css({
-		'position': 'static',
-		'height':'1274px'
-	});
-
-	$('.content').css({
-		'height':'73em',
-		'min-height':'73em'
-	});
-	
-	}
-
-	else if(winWidth>1850){
-			console.log('IT WORKED', winWidth)
-	$('#wrapper').css({
-		'height':'2795px'
-	});
-
-	$('.content').css({
-		'height': '115em'
-	})
-	$('header').css({
-		'background-color':'#B2B5BA'
-	})
-	}
-
-
-	window.onscroll = function(){
-		
-		var scroll = window.scrollY;
-
-		$('#main').css({ 'top': '-' + scroll +'px'});
-
-		$('header').css({ 'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'})
-	
-		parallax(scroll, footerHeight);
-	
-		parallax(scroll, footerHeight);
-
-	}
-
+app.contentCollection = Backbone.Collection.extend({
+  model: app.contentModel,
+  comparator: 'cid'
 });
 
-
-//This will fix the annoying animations that occur on mobile. They look great on desktop but not mobile.
-if(winWidth>768){
-	function jFade(event){
-
-	$('#arrow').animate({opacity :0}, 500);
-	}
-
-	function jFadeIn(event){
-
-	$('#arrow').animate({opacity :100}, 500);
-	}
-
-	function jFadeHead(event){
-
-	$('#dal-head').animate({opacity :0}, 500);
-	}
-
-	function jFadeinHead(event){
-
-	$('#dal-head').animate({opacity :100}, 500);
-	}
-}
-
-var controller = new ScrollMagic.Controller();
-
-var scene = new ScrollMagic.Scene({   
-	duration:200,
-	triggerElement:"trigger",
-	reverse:true
-    })
-
-scene.update();
-// scene.on("start", function (event) {
-//     console.log("Hit start point of scene.");
-// });
-scene.on("start", jFade);
-scene.on("leave", jFadeIn);
-scene.addTo(controller); 
+app.contentInstance = new app.contentCollection();
 
 
-var headScene = new ScrollMagic.Scene({   
-	triggerElement: "#gallery",
-	reverse:true
-    })
-headScene.update();
-// headScene.on("start", function (event) {
-//     console.log("Hit start point of headScene.");
-// });
-headScene.on("start", jFadeHead);
-headScene.on("leave", jFadeinHead);
-headScene.addTo(controller); 
+app.ContentMainView = Backbone.View.extend({
+  el: '#body',
+  template: _.template(
+    '<nav id="nav">' +
+      '<ul>' +
+        '<li id="about">About</li>' +
+         '<li id="work">Work</li>' +
+      '</ul>' +
+    '</nav>' +
+    '<div id="content">' +
+      '<div id="welcome"> <p>Hi, I am Dallas Summers, and I am a Full-Stack Developer</p></div>'+
+    '</div>'),
+    render: function () {
+      console.log('main view render function started');
 
+      this.$el.html(this.template);
+      app.aboutViewInstance = new app.AboutView({collection: this.collection});
+      app.workViewInstance = new app.WorkView({collection: this.collection});
+      app.workViewInstance.render();
+    }
+});
 
-console.log(winWidth, "WINDOW WIDTH")
+app.AboutView = Backbone.View.extend({
+  el: '#body',
+  events: {
+    'click #about': 'aboutContent'
+  },
+  template: _.template(
+      '<div class="about_section">' +
+        '<img src="lib/dallas.jpg" alt="photo" class="profile-photo">' +
+        '<section class="about_text">' +
+        '<p>I am Passionate about solving problems for clients and partners and positvely impacting my community through growing technologies.</p>' +
+        '<p>I am detail oriented, and driven. Specializing in HTML, CSS, and JavaScript, I am always looking at growing my knowledge of programming languages. With a careful approach to design, and development, I seek to enrich the lives of those around me through everyday interactions. Let me work with you in making a difference. Feel free to contact me. <br></p>' +
+        '</section>' +
+      '</div>'
+    ),
+  aboutContent: function (event) {
+    event.preventDefault();
+    var $aboutBody = $(this.el).find('#content');
+    console.log('About View has rendered  ');
+    $aboutBody.html(this.template);
+    // var descriptionInput = $description.val();
+    // this.collection.add({title: todoInput, description: descriptionInput});
+    // $description.val('');
+    // $todoInput.val('');
+  }
+});
 
+app.WorkView = Backbone.View.extend({
+  el: '#body',
+  events: {
+    'click #work': 'workContent'
+  },
+  template: _.template(
+    '<ul id="gallery">' +
+      '<li>' +
+        '<a href="http://atna.herokuapp.com">' +
+          '<img src="lib/atna.jpg"/>' +
+        '</a>' +
+        '<p>A web application for Best Picture Nominees</p>' +
+      '</li>' +
+      '<li>' +
+        '<a href="http://dallasss7.github.io/cardGame">' +
+            '<img src="lib/greenPaper.jpg"/>' +
+        '</a>' +
+        '<p>A card game built with Backbone.js</p>' +
+      '</li>' +
+      '<li>' +
+        '<a href="cobra/cobraIndex.html">' +
+          '<img src="lib/massage.jpg"/>' +
+        '</a>' +
+        '<p>A responsive spa website</p>' +
+      '</li>' +
+      '<li>' +
+        '<a href="http://martin-goebel.squarespace.com/">' +
+          '<img src="lib/mobeiusllc.jpg"/>' +
+        '</a>' +
+        '<p>A Clients non profit Company</p>' +
+      '</li>' +
+    '<ul>'
+    ),
+  workContent: function (event) {
+    event.preventDefault();
+    var $aboutBody = $(this.el).find('#content');
+    $aboutBody.html(this.template);
+  }
+  // initialize: function () {
+  //   this.collection.on('add', this.render, this);
+  // },
+  // render: function () {
+  //   var outputHtml = '';
+  //   // ANSWER: 
+  //   var compiledTemplate = _.template('<li><strong><%=title%>: </strong><%=description%></li>');
+  //   console.log(compiledTemplate);
+  //   this.collection.models.forEach(function (item) {
+  //     var data = {};
+  //     data.title = item.get('title');
+  //     data.description = item.get('description');
+  //     outputHtml += compiledTemplate(data);
+  //   });
 
+  //   $(this.el).html(outputHtml);
+  // }
+});
+app.HeaderView = Backbone.View.extend({
+  el: '#header',
+  template: _.template('<h3>Dallas Summers: {Full-Stack Developer}</h3>'),
+  render: function () {
+    this.$el.html(this.template);
+  }
+  
+});
 
+$(function () {
+  app.contentViewInstance = new app.ContentMainView({collection: app.contentInstance});
+  app.headerViewInstance = new app.HeaderView({});
+  app.contentViewInstance.render();
+  app.headerViewInstance.render();
+  app.workViewInstance.render();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 

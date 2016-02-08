@@ -1,0 +1,199 @@
+
+/*General*/
+a{
+  color: black;
+  text-decoration: none;
+}
+
+body{
+  background-color: #FAFAFA;
+  
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+/*Header*/
+#header{
+  font-family:"Orbitron", "Trench", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/*Nav*/
+#nav{
+  display: block;
+  cursor: pointer;
+}
+
+#nav ul{
+  text-align: center;
+  padding: 0;
+}
+
+#nav li{
+  display: inline;
+  padding: 0.50em;
+  text-transform: lowercase;
+  font-family:"Orbitron", "Trench", sans-serif;
+}
+
+/*Content*/
+#content{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#content p{
+  color: #757575;
+  font-family:"Orbitron", "Trench", sans-serif;
+  text-transform: lowercase;
+}
+
+/*Welcome*/
+
+#welcome{
+  margin: 0 auto;
+  width: 30%;
+}
+
+/*About*/
+
+/*Work*/
+
+#gallery li{
+  padding-bottom: 3em; 
+}
+
+#gallery img, .profile-photo{
+  width: 70%;
+  margin: 0 auto;
+  top:10%;
+  left: 10%;
+}
+
+/*img.ri{
+  position: absolute;
+  max-width: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+img.ri:empty{
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.ri { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri { max-height: 90%; }
+}*/
+
+/*sticky footer*/
+.footer {
+  bottom: 0;
+  clear: both;
+}
+
+.contact-info{
+  margin: 5em 0 16px 0;
+  text-align: center;
+  list-style-type: none;  
+}
+
+.contact-info li{
+  display: inline;
+}
+
+.contact-info li a{  
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  padding: 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.mail a{
+  background-image: url('../lib/mail.png');
+}
+
+.contact-info li.twitter a{
+  background-image: url('../lib/twitter.png');
+}
+
+.contact-info li.linkedIn a{
+  background-image: url('../lib/linkedin.png');
+}
+
+.contact-info li.GitHub a{
+  background-image: url('../lib/github.png');
+}
+
+.contact-info li.CodePen a{
+  background-image: url('../lib/codepenicon.png');
+}
+
+
+/*Response*/
+@media screen and (min-width: 768px) {
+  .profile-photo{
+    width: 20%;
+  }
+
+#gallery li{
+  float: left;
+  width: 35%;
+  margin: 7%;
+
+}
+#gallery img{
+  width: 100%;
+}
+
+.about_text{
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+}
+
+#header{
+  font-size: 2em;
+}
+
+  }
+
+
+
+@media screen and (min-width:850px){
+
+
+  }
+
+
+
+
+
