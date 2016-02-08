@@ -52,7 +52,7 @@ ul{
   display: inline;
   padding: 0.50em;
   text-transform: lowercase;
-  font-family: 'Orbitron', 'Quicksand'. sans-serif;
+  font-family:"Orbitron", 'Quicksand', sans-serif;
 }
 
 /*Content*/
