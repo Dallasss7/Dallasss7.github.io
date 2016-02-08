@@ -30,7 +30,7 @@ ul{
 
 /*Header*/
 #header{
-  font-family:"Orbitron", "Trench", sans-serif;
+  font-family:"Orbitron", sans-serif;
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ ul{
   display: inline;
   padding: 0.50em;
   text-transform: lowercase;
-  font-family:"Orbitron", "Trench", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /*Content*/
@@ -63,7 +63,7 @@ ul{
 }
 #content p{
   color: #757575;
-  font-family:"Orbitron", "Trench", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-transform: lowercase;
 }
 
