@@ -102,6 +102,12 @@ app.WorkView = Backbone.View.extend({
         '</a>' +
         '<p>A Clients non profit Company</p>' +
       '</li>' +
+      '<li>' +
+        '<a href="http://friendlytechhelpline.com">' +
+          '<img src="lib/techhelpline.jpg">' +
+        '</a>' +
+          '<p>Friendly Tech Helpline</p>' +
+      '</li>' +
     '<ul>'
     ),
   workContent: function (event) {
