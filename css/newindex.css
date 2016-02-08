@@ -10,6 +10,10 @@ body{
   
 }
 
+ul{
+  padding: 0;
+}
+
 html, body{
   height: 100%;
   width: 100%;
@@ -71,15 +75,17 @@ ul{
 }
 
 /*About*/
-
+.profile-photo{
+  width: 70%;
+}
 /*Work*/
 
 #gallery li{
   padding-bottom: 3em; 
 }
 
-#gallery img, .profile-photo{
-  width: 70%;
+#gallery img{
+  width: 100%;
   margin: 0 auto;
   top:10%;
   left: 10%;
