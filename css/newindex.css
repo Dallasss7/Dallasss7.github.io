@@ -7,7 +7,7 @@ a{
 
 body{
   background-color: #FAFAFA;
-  
+
 }
 
 ul{
@@ -81,7 +81,7 @@ ul{
 /*Work*/
 
 #gallery li{
-  padding-bottom: 3em; 
+  padding-bottom: 3em;
 }
 
 #gallery img{
@@ -127,20 +127,25 @@ img.ri:empty{
 .contact-info{
   margin: 5em 0 16px 0;
   text-align: center;
-  list-style-type: none;  
+  list-style-type: none;
 }
 
 .contact-info li{
   display: inline;
 }
 
-.contact-info li a{  
+.contact-info li a{
   text-decoration: none;
   background: rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-size: 25px 25px;
   padding: 30px;
   margin: 0 0 10px;
+}
+
+/*adding this to correct the footer sitting off to the side*/
+.contact-info li:last-child a{
+  padding-right: 0px;
 }
 
 .contact-info li.mail a{
@@ -198,8 +203,3 @@ img.ri:empty{
 
 
   }
-
-
-
-
-
