@@ -55,6 +55,10 @@ ul{
   font-family: 'Orbitron', sans-serif;
 }
 
+#nav li:hover{
+  opacity: .5;
+}
+
 /*Content*/
 #content{
   width: 80%;
@@ -85,10 +89,22 @@ ul{
 }
 
 #gallery img{
+  border-radius: 8px;
   width: 100%;
   margin: 0 auto;
   top:10%;
   left: 10%;
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+}
+
+#gallery li img:hover{
+  -moz-box-shadow: 0 0 10px #c2c2c2;
+  -webkit-box-shadow: 0 0 10px #c2c2c2;
+  box-shadow: 0 0 10px #c2c2c2;
+  opacity: 0.8;
+
 }
 
 /*img.ri{
