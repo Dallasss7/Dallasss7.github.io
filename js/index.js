@@ -29,12 +29,14 @@ app.ContentMainView = Backbone.View.extend({
 
     '<nav id="nav">' +
       '<ul>' +
-        '<li id="about">About</li>' +
          '<li id="work">Work</li>' +
+        '<li id="about">About</li>' +
       '</ul>' +
     '</nav>' +
+    '<hr>' +
     '<div id="content">' +
-      '<div id="welcome"> <p>Hi, I am Dallas Summers, and I am a Full-Stack Developer</p></div>'+
+      '<div id="welcome"> <p>Hi, I am Dallas Summers,<br>' +
+      'and I am a Full-Stack Developer.</p></div>' +
     '</div>'),
     render: function () {
       console.log('main view render function started');
@@ -57,6 +59,7 @@ app.AboutView = Backbone.View.extend({
         '<section class="about_text">' +
         '<p>I am Passionate about solving problems for clients and partners and positvely impacting my community through growing technologies.</p>' +
         '<p>I am detail oriented, and driven. Specializing in HTML, CSS, and JavaScript, I am always looking at growing my knowledge of programming languages. With a careful approach to design, and development, I seek to enrich the lives of those around me through everyday interactions. Let me work with you in making a difference. Feel free to contact me. <br></p>' +
+        '<p><strong>Skills:</strong> Harvest, Bootstrap,  JavaScript, jQuery, Backbone.js, Node.js, Basecamp, Squarespace, Terminal, WordPress, HTML, HTML5, CSS, Git, JIRA</p>' +
         '</section>' +
       '</div>'
     ),
@@ -88,6 +91,18 @@ app.WorkView = Backbone.View.extend({
         '<p>A web application for Best Picture Nominees</p>' +
       '</li>' +
       '<li>' +
+        '<a href="http://friendlytechhelpline.com">' +
+          '<img src="lib/techhelpline.jpg">' +
+        '</a>' +
+          '<p>Friendly Tech Helpline</p>' +
+      '</li>' +
+      '<li>' +
+        '<a href="http://martin-goebel.squarespace.com/">' +
+          '<img src="lib/mobeiusllc.jpg"/>' +
+        '</a>' +
+        '<p>A Clients non profit Company</p>' +
+      '</li>' +
+      '<li>' +
         '<a href="http://dallasss7.github.io/cardGame">' +
             '<img src="lib/greenPaper.jpg"/>' +
         '</a>' +
@@ -97,20 +112,9 @@ app.WorkView = Backbone.View.extend({
         '<a href="cobra/cobraIndex.html">' +
           '<img src="lib/massage.jpg"/>' +
         '</a>' +
-        '<p>A responsive spa website</p>' +
+        '<p>a bootstrap site for a spa</p>' +
       '</li>' +
-      '<li>' +
-        '<a href="http://martin-goebel.squarespace.com/">' +
-          '<img src="lib/mobeiusllc.jpg"/>' +
-        '</a>' +
-        '<p>A Clients non profit Company</p>' +
-      '</li>' +
-      '<li>' +
-        '<a href="http://friendlytechhelpline.com">' +
-          '<img src="lib/techhelpline.jpg">' +
-        '</a>' +
-          '<p>Friendly Tech Helpline</p>' +
-      '</li>' +
+
     '<ul>'
     ),
   workContent: function (event) {
@@ -138,8 +142,8 @@ app.WorkView = Backbone.View.extend({
 });
 app.HeaderView = Backbone.View.extend({
   el: '#header',
-  template: _.template('<h3>Dallas Summers: </h3>' +
-    '<p>{Full-Stack Developer}</p>'),
+  template: _.template('<h3>Dallas Summers</h3>' +
+    '<p>{Developer}</p>'),
   render: function () {
     this.$el.html(this.template);
   }
