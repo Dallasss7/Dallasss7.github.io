@@ -84,35 +84,35 @@ app.WorkView = Backbone.View.extend({
     '<ul id="gallery">' +
       '<li>' +
       '<div>' +
-        '<a href="http://atna.herokuapp.com">' +
+        '<a href="http://atna.herokuapp.com" target="_blank">' +
           '<img src="lib/atna.jpg"/>' +
         '</a>' +
         '</div>' +
         '<p>A web application for Best Picture Nominees</p>' +
       '</li>' +
       '<li>' +
-        '<a href="http://friendlytechhelpline.com">' +
+        '<a href="http://friendlytechhelpline.com" target="_blank">' +
           '<img src="lib/techhelpline.jpg">' +
         '</a>' +
           '<p>Friendly Tech Helpline</p>' +
       '</li>' +
       '<li>' +
-        '<a href="http://martin-goebel.squarespace.com/">' +
+        '<a href="http://martin-goebel.squarespace.com/" target="_blank">' +
           '<img src="lib/mobeiusllc.jpg"/>' +
         '</a>' +
-        '<p>A Clients non profit Company</p>' +
+        '<p>Moebius Partners LLC</p>' +
       '</li>' +
       '<li>' +
-        '<a href="http://dallasss7.github.io/cardGame">' +
+        '<a href="http://dallasss7.github.io/cardGame" target="_blank">' +
             '<img src="lib/greenPaper.jpg"/>' +
         '</a>' +
         '<p>A card game built with Backbone.js</p>' +
       '</li>' +
       '<li>' +
-        '<a href="cobra/cobraIndex.html">' +
+        '<a href="cobra/cobraIndex.html" target="_blank">' +
           '<img src="lib/massage.jpg"/>' +
         '</a>' +
-        '<p>a bootstrap site for a spa</p>' +
+        '<p>my first site for a fictional spa</p>' +
       '</li>' +
 
     '<ul>'
