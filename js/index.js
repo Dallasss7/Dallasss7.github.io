@@ -1,14 +1,14 @@
-//ASSIGNMENT: 
+//ASSIGNMENT:
 // Look up in the underscore js documentation how to change the
-// template settings to use "Mustache.js" style template interpolation 
-//ANSWER: 
+// template settings to use "Mustache.js" style template interpolation
+//ANSWER:
 
 
-//ASSIGNMENT: 
-// Change the template in the variable compiledTemplate in TodoListView 
-// to match the new template delimeters 
-// ASSIGNMENT: 
-// In a group, compare the string concatenation in example 5 with the use of 
+//ASSIGNMENT:
+// Change the template in the variable compiledTemplate in TodoListView
+// to match the new template delimeters
+// ASSIGNMENT:
+// In a group, compare the string concatenation in example 5 with the use of
 // templates here
 
 var app = {};
@@ -80,9 +80,11 @@ app.WorkView = Backbone.View.extend({
   template: _.template(
     '<ul id="gallery">' +
       '<li>' +
+      '<div>' +
         '<a href="http://atna.herokuapp.com">' +
           '<img src="lib/atna.jpg"/>' +
         '</a>' +
+        '</div>' +
         '<p>A web application for Best Picture Nominees</p>' +
       '</li>' +
       '<li>' +
@@ -121,7 +123,7 @@ app.WorkView = Backbone.View.extend({
   // },
   // render: function () {
   //   var outputHtml = '';
-  //   // ANSWER: 
+  //   // ANSWER:
   //   var compiledTemplate = _.template('<li><strong><%=title%>: </strong><%=description%></li>');
   //   console.log(compiledTemplate);
   //   this.collection.models.forEach(function (item) {
@@ -141,7 +143,7 @@ app.HeaderView = Backbone.View.extend({
   render: function () {
     this.$el.html(this.template);
   }
-  
+
 });
 
 $(function () {
@@ -152,5 +154,3 @@ $(function () {
   app.workViewInstance.render();
 
 });
-
-
