@@ -51,10 +51,11 @@ img{
 }
 #header p{
   text-transform: lowercase;
-  color: #999;
+  color: #005457;
   letter-spacing: 0em;
   margin-top: -1em;
 }
+
 
 /*Nav*/
 #nav{
