@@ -26,6 +26,7 @@ app.contentInstance = new app.contentCollection();
 app.ContentMainView = Backbone.View.extend({
   el: '#body',
   template: _.template(
+
     '<nav id="nav">' +
       '<ul>' +
         '<li id="about">About</li>' +
@@ -135,7 +136,8 @@ app.WorkView = Backbone.View.extend({
 });
 app.HeaderView = Backbone.View.extend({
   el: '#header',
-  template: _.template('<h3>Dallas Summers: {Full-Stack Developer}</h3>'),
+  template: _.template('<h3>Dallas Summers: </h3>' +
+    '<p>{Full-Stack Developer}</p>'),
   render: function () {
     this.$el.html(this.template);
   }
