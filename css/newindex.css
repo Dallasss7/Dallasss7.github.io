@@ -6,7 +6,7 @@ a{
 }
 
 p{
-  font-size: 1.45em;
+  font-size: 1.25em;
 }
 
 body{
@@ -42,6 +42,10 @@ img{
   -moz-box-shadow: 0 0 10px #c2c2c2;
   -webkit-box-shadow: 0 0 10px #c2c2c2;
   box-shadow: 0 0 10px #c2c2c2;
+}
+
+h3{
+  font-size: 1.4em;
 }
 
 /*Header*/
@@ -101,12 +105,12 @@ img{
 
 #welcome{
   margin: 0 auto;
-  width: 70%;
+  width: 88%;
 }
 
 /*About*/
 .profile-photo{
-  width: 70%;
+  width: 50%;
 }
 /*Work*/
 
@@ -233,8 +237,9 @@ img.ri:empty{
 }
 
 #header{
-  font-size: 2em;
+  font-size: 1em;
 }
+
 
 
   }
