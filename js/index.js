@@ -108,13 +108,6 @@ app.WorkView = Backbone.View.extend({
         '</a>' +
         '<p>A card game built with Backbone.js</p>' +
       '</li>' +
-      '<li>' +
-        '<a href="cobra/cobraIndex.html" target="_blank">' +
-          '<img src="lib/massage.jpg"/>' +
-        '</a>' +
-        '<p>my first site for a fictional spa</p>' +
-      '</li>' +
-
     '<ul>'
     ),
   workContent: function (event) {

@@ -5,6 +5,10 @@ a{
   text-decoration: none;
 }
 
+p{
+  font-size: 1.45em;
+}
+
 body{
   background-color: #FAFAFA;
 
@@ -54,8 +58,8 @@ img{
   color: #005457;
   letter-spacing: 0em;
   margin-top: -1em;
+  font-size: 1em;
 }
-
 
 /*Nav*/
 #nav{
@@ -208,6 +212,10 @@ img.ri:empty{
     width: 20%;
   }
 
+  p{
+    font-size: 1em;
+  }
+
 #gallery li{
   float: left;
   width: 35%;
@@ -227,6 +235,7 @@ img.ri:empty{
 #header{
   font-size: 2em;
 }
+
 
   }
 
