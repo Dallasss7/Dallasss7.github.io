@@ -83,30 +83,32 @@ app.WorkView = Backbone.View.extend({
   template: _.template(
     '<ul id="gallery">' +
       '<li>' +
-      '<div>' +
         '<a href="http://atna.herokuapp.com" target="_blank">' +
           '<img src="lib/atna.jpg"/>' +
         '</a>' +
-        '</div>' +
         '<p>A web application for Best Picture Nominees</p>' +
+        '<p id="sub_text" style="color: #99968E;">Node, Orchestrate.io, Backbone</p>' +
       '</li>' +
       '<li>' +
-        '<a href="http://friendlytechhelpline.com" target="_blank">' +
-          '<img src="lib/techhelpline.jpg">' +
+        '<a href="http://dallasss7.github.io/cobra/cobraIndex.html" target="_blank">' +
+          '<img src="lib/massage.jpg">' +
         '</a>' +
-          '<p>Friendly Tech Helpline</p>' +
+          '<p>Telling Touch Massage</p>' +
+          '<p id="sub_text" style="color: #99968E;">My first website. Bootstrap, jQuery</p>' +
       '</li>' +
       '<li>' +
         '<a href="http://martin-goebel.squarespace.com/" target="_blank">' +
           '<img src="lib/mobeiusllc.jpg"/>' +
         '</a>' +
         '<p>Moebius Partners LLC</p>' +
+        '<p id="sub_text" style="color: #99968E;">Custom CSS, Squarespace</p>' +
       '</li>' +
       '<li>' +
         '<a href="http://dallasss7.github.io/cardGame" target="_blank">' +
             '<img src="lib/greenPaper.jpg"/>' +
         '</a>' +
-        '<p>A card game built with Backbone.js</p>' +
+        '<p>Matching card game</p>' +
+        '<p id="sub_text" style="color: #99968E;">Backbone, jQuery</p>' +
       '</li>' +
     '<ul>'
     ),
