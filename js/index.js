@@ -24,13 +24,14 @@
       '</nav>' +
       '<hr>' +
       '<div id="content">' +
-        '<div id="welcome"> <p>Hi, I am Dallas Summers,<br>' +
+        '<div id="welcome"> <p>Hi, I am Dallas <span id="easter">Summers</span>,<br>' +
         'and I am a Web Developer.</p></div>' +
       '</div>'),
       render: function () {
         this.$el.html(this.template);
         app.aboutViewInstance = new app.AboutView({collection: this.collection});
         app.workViewInstance = new app.WorkView({collection: this.collection});
+        app.easterViewInstance = new app.EasterView({collection: this.collection});
         app.workViewInstance.render();
       }
   });
@@ -104,6 +105,22 @@
       $aboutBody.html(this.template);
     }
   });
+
+  app.EasterView = Backbone.View.extend({
+    el: '#body',
+    events: {
+      'dblclick #easter': 'easterContent'
+    },
+    template: _.template(
+       '<iframe width="560" height="315" src="https://www.youtube.com/embed/GaoLU6zKaws" frameborder="0" allowfullscreen></iframe>'
+      ),
+    easterContent: function (event) {
+      event.preventDefault();
+      var $aboutBody = $(this.el).find('#content');
+      $aboutBody.html(this.template);
+    }
+  });
+
   app.HeaderView = Backbone.View.extend({
     el: '#header',
     template: _.template('<h3>Dallas Summers</h3>' +
