@@ -109,6 +109,9 @@
     template: _.template('<h3>Dallas Summers</h3>' +
       '<p>{Developer}</p>'),
     render: function () {
+      this.$el.on('click', function(){
+        app.contentViewInstance.render();
+      })
       this.$el.html(this.template);
     }
 
