@@ -56,6 +56,7 @@ h3{
   text-transform: uppercase;
   letter-spacing: .25em;
   color: #910808;
+  width: 100%;
 }
 #header p{
   text-transform: lowercase;
@@ -67,7 +68,6 @@ h3{
 #header:hover{
   cursor: pointer;
 }
-
 /*Nav*/
 #nav{
   display: block;
@@ -252,6 +252,8 @@ img.ri:empty{
 }
 
 #header{
+  margin: 0 auto;
+  width: 58%;
   font-size: 1em;
 }
 
