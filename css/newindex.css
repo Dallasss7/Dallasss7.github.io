@@ -88,6 +88,9 @@ h3{
   opacity: .5;
 }
 
+.selected{
+  color: #910808;
+}
 /*Content*/
 #content{
   width: 80%;

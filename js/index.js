@@ -1,15 +1,4 @@
-//ASSIGNMENT:
-// Look up in the underscore js documentation how to change the
-// template settings to use "Mustache.js" style template interpolation
-//ANSWER:
 
-
-//ASSIGNMENT:
-// Change the template in the variable compiledTemplate in TodoListView
-// to match the new template delimeters
-// ASSIGNMENT:
-// In a group, compare the string concatenation in example 5 with the use of
-// templates here
 (function(){
   var app = {};
 
@@ -64,11 +53,9 @@
     aboutContent: function (event) {
       event.preventDefault();
       var $aboutBody = $(this.el).find('#content');
+      $('#work').removeClass('selected');
+      $('#about').addClass('selected');
       $aboutBody.html(this.template);
-      // var descriptionInput = $description.val();
-      // this.collection.add({title: todoInput, description: descriptionInput});
-      // $description.val('');
-      // $todoInput.val('');
     }
   });
 
@@ -112,25 +99,10 @@
     workContent: function (event) {
       event.preventDefault();
       var $aboutBody = $(this.el).find('#content');
+      $('#about').removeClass('selected');
+      $('#work').addClass('selected');
       $aboutBody.html(this.template);
     }
-    // initialize: function () {
-    //   this.collection.on('add', this.render, this);
-    // },
-    // render: function () {
-    //   var outputHtml = '';
-    //   // ANSWER:
-    //   var compiledTemplate = _.template('<li><strong><%=title%>: </strong><%=description%></li>');
-    //   console.log(compiledTemplate);
-    //   this.collection.models.forEach(function (item) {
-    //     var data = {};
-    //     data.title = item.get('title');
-    //     data.description = item.get('description');
-    //     outputHtml += compiledTemplate(data);
-    //   });
-
-    //   $(this.el).html(outputHtml);
-    // }
   });
   app.HeaderView = Backbone.View.extend({
     el: '#header',
