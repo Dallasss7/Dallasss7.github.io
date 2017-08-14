@@ -36,7 +36,7 @@
       '<hr>' +
       '<div id="content">' +
         '<div id="welcome"> <p>Hi, I am Dallas Summers,<br>' +
-        'and I am a Full-Stack Developer.</p></div>' +
+        'and I am a Web Developer.</p></div>' +
       '</div>'),
       render: function () {
         this.$el.html(this.template);
