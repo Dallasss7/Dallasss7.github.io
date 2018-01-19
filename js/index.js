@@ -22,7 +22,7 @@
           '<li id="about">About</li>' +
         '</ul>' +
       '</nav>' +
-      '<hr>' +
+      '<div id="home"></div>' +
       '<div id="content">' +
         '<div id="welcome"> <p>Hi, I am Dallas <span id="easter">Summers</span>,<br>' +
         'and I am a Web Developer.</p></div>' +
