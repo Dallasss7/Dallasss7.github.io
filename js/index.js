@@ -71,15 +71,8 @@
           '<a href="http://atna.herokuapp.com" target="_blank">' +
             '<img src="lib/atna.jpg"/>' +
           '</a>' +
-          '<p>A web application for Best Picture Nominees</p>' +
+          '<p>A web app for Best Picture Nominees</p>' +
           '<p id="sub_text" style="color: #99968E;">Node, Orchestrate.io, Backbone</p>' +
-        '</li>' +
-        '<li>' +
-          '<a href="http://dallasss7.github.io/cobra/cobraIndex.html" target="_blank">' +
-            '<img src="lib/massage.jpg">' +
-          '</a>' +
-            '<p>Telling Touch Massage</p>' +
-            '<p id="sub_text" style="color: #99968E;">My first website. Bootstrap, jQuery</p>' +
         '</li>' +
         '<li>' +
           '<a href="http://martin-goebel.squarespace.com/" target="_blank">' +
@@ -94,6 +87,13 @@
           '</a>' +
           '<p>Matching card game</p>' +
           '<p id="sub_text" style="color: #99968E;">Backbone, jQuery</p>' +
+        '</li>' +
+        '<li>' +
+          '<a href="http://dallasss7.github.io/cobra/cobraIndex.html" target="_blank">' +
+            '<img src="lib/massage.jpg">' +
+          '</a>' +
+            '<p>Telling Touch Massage</p>' +
+            '<p id="sub_text" style="color: #99968E;">My first website. Bootstrap, jQuery</p>' +
         '</li>' +
       '<ul>'
       ),

@@ -246,8 +246,13 @@ img.ri:empty{
     margin: 7%;
 
   }
+
   #gallery img{
     width: 100%;
+  }
+
+  #gallery li:first-child{
+    margin-bottom: 0%;
   }
 
   .about_text{
