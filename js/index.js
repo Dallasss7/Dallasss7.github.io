@@ -47,7 +47,7 @@
           '<section class="about_text">' +
           '<p>I am Passionate about solving problems for clients and partners and positvely impacting my community through growing technologies.</p>' +
           '<p>I am detail oriented, and driven. Specializing in HTML, CSS, and JavaScript, I am always looking at growing my knowledge of programming languages. With a careful approach to design, and development, I seek to enrich the lives of those around me through everyday interactions. Let me work with you in making a difference. Feel free to contact me. <br></p>' +
-          '<p><strong>Skills:</strong> Harvest, Bootstrap,  JavaScript, jQuery, Backbone.js, Node.js, Basecamp, Squarespace, Terminal, WordPress, HTML, HTML5, CSS, Git, JIRA</p>' +
+          '<p><strong>Skills:</strong> Angular2, Vanilla JavaScript, jQuery, Backbone.js, Node.js, Basecamp, Harvest, Squarespace, Terminal, WordPress, SVN, XML, HTML, HTML5, CSS, CSS3, Git, JIRA</p>' +
           '</section>' +
         '</div>'
       ),
