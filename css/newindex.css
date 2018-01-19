@@ -98,7 +98,7 @@ h3{
 }
 
 .selected{
-  color: #910808;
+  color: white;
 }
 
 #home{
@@ -156,36 +156,8 @@ h3{
 /*This is the descriptive subtext underneath each of my work gallery divs. The point is for the style to over ride what content p is doing.*/
 #sub_text{
   font-style: italic;
-  
   font-size: .75em;
 }
-
-/*img.ri{
-  position: absolute;
-  max-width: 80%;
-  top: 10%;
-  left: 10%;
-  border-radius: 3px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
-}
-
-img.ri:empty{
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-@media screen and (orientation: portrait) {
-  img.ri { max-width: 90%; }
-}
-
-@media screen and (orientation: landscape) {
-  img.ri { max-height: 90%; }
-}*/
 
 /*sticky footer*/
 .footer {
@@ -275,13 +247,5 @@ img.ri:empty{
     margin-bottom: -14px;
   }
 
+}
 
-
-  }
-
-
-
-@media screen and (min-width:850px){
-
-
-  }
