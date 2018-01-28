@@ -18,7 +18,7 @@
 
       '<nav id="nav">' +
         '<ul>' +
-           '<li id="work">Work</li>' +
+           '<li id="work">Projects</li>' +
           '<li id="about">About</li>' +
         '</ul>' +
       '</nav>' +
@@ -43,6 +43,8 @@
     },
     template: _.template(
         '<div class="about_section">' +
+          '<h2>About</h2>' +
+          '<hr>'+
           '<img src="lib/dallas.jpg" alt="photo" class="profile-photo">' +
           '<section class="about_text">' +
           '<p>I am Passionate about solving problems for clients and partners and positvely impacting my community through growing technologies.</p>' +
@@ -66,6 +68,9 @@
       'click #work': 'workContent'
     },
     template: _.template(
+      '<h2> Recent Projects</h2>'+
+      '<hr>'+
+      '<p>Most of the work I do is proprietary. Samples can be sent upon request or discussed in person.</p>' +
       '<ul id="gallery">' +
         '<li>' +
           '<a href="http://atna.herokuapp.com" target="_blank">' +
