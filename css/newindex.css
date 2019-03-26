@@ -242,7 +242,7 @@ html, body{
   padding: .5em;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1em;
   color: black;
   white-space: nowrap;
@@ -284,7 +284,7 @@ html, body{
   color: #fff;
   font-size: 1em;
   font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
+  font-weight: light;
 }
 
 /* circle graph */
