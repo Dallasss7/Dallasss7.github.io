@@ -1,10 +1,10 @@
 (function() {
 
-  $(".about_body, .skills_body, .easter").hide();
+  $(".about_body, .skills_body").hide();
   $(".about, .skill").removeClass("active");
 
-  $(".about, .skills, .easter_button").on("click", function () {
-    $(".about_body, .skills_body, .easter").hide();
+  $(".about, .skills").on("click", function () {
+    $(".about_body, .skills_body").hide();
     $(".about, .skills").removeClass("active");        
 
     if ($(this).attr("class") == "about")
@@ -12,7 +12,7 @@
       $(".about_body").fadeIn();
       $(".about").addClass("active");
     }
-    else if($(this).attr("class") == "skills")
+    else
     {
       $(".skills_body").fadeIn();
       $(".skills").addClass("active");
@@ -27,14 +27,10 @@
         animate: 800
       });
     }
-    else
-    {
-      $('.easter').fadeIn();
-    }
   });
 
   $(".title").on("click", function() {
-    $(".about_body, .skills_body, .easter").hide();
+    $(".about_body, .skills_body").hide();
     $(".about, .skill").removeClass("active");
   })
 
