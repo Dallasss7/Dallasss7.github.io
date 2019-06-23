@@ -1,0 +1,186 @@
+html {
+  background-color: #EAEAEA;
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+ul.li {
+  list-style-type: circle;
+}
+
+li {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.header h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 2% 2% 0 2%;
+  font-size: 2.75em;
+}
+
+.nav {
+  border-top: 1px solid #dee2e6;
+}
+
+.nav-item {
+  margin: 0 1%;
+}
+
+.nav a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #6E6E6E;
+}
+
+.nav li:hover a {
+  border: none;
+  color: #BDBDBD;
+}
+
+body{
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.navbar {
+  top: 60px;
+  background-color: #EAEAEA !important;
+}
+
+.navbar > button {
+  float: right;
+}
+
+.boxes {
+  display: flex;
+  margin: 0 auto;
+  padding: 3%;
+  width: 80%;
+}
+
+.boxes:not(:first-child) {
+  border-top: 1px solid #BFBFBF;
+}
+
+#book_content {
+  width: 75%;
+  margin-left: 4%;
+}
+
+.book_image {
+  margin-top: 2%;
+  width: 200px;
+  height: 120px;
+}
+
+#bio_content {
+  float: right;
+  width: 75%;
+  margin-left: 4%;
+}
+
+.bio_image {
+  margin-top: 2%;
+  width: 200px;
+  height: 120px;
+}
+
+.lou_images {
+  box-shadow: 0 .5rem 1.625rem;
+  width: 100%;
+  height: auto;
+}
+
+.dates li span {
+  font-weight: bold;
+}
+
+.contact-info{
+  margin: .1em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  background-color: #EAEAEA;
+}
+
+.contact-info li{
+  margin-top: auto;
+}
+
+.contact-info li a{
+  bottom: 0;
+  text-decoration: none;
+  padding: .5em;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  color: #9C9C9C;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .body_container {
+    padding-top: 5em;
+  }
+
+  .boxes {
+    width: 90%;
+  }
+
+  .box_content {
+    width: 100%;
+  }
+
+  #books, #biography {
+    display: block;
+    position: relative;
+    margin-top: 10%;
+  }
+
+  .book_image, .bio_image {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .bio_image {
+    margin-top: 2em;
+  }
+
+  #book_content, #bio_content {
+    text-align: center;
+    top: 10px;
+    left: 450px;
+    width: 100%;
+  }
+
+  #book_content {
+    margin: 13em auto 0 auto;
+  }
+
+  #bio_content {
+    margin: 10em auto 0 auto;
+  }
+
+  #news > .box_content {
+    padding-top: 2em;
+  }
+
+}
