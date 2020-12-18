@@ -285,6 +285,12 @@ html, body{
   margin-top: 2em;
 }
 
+.about_body-image {
+	width: 25%;
+	border-radius: 6px;
+	margin: 0 0 1.5em 0;
+}
+
 .about_body p {
   color: #fff;
   font-size: 1em;
@@ -332,6 +338,10 @@ html, body{
 
   .sub_title {
     font-size: 1em;
+  }
+
+  .about_body-image {
+	  width: 50%;
   }
 
 }
